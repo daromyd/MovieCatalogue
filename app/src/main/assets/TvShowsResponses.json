@@ -1,0 +1,104 @@
+{
+  "tvShows": [
+    {
+      "tvShowId": "TV1",
+      "title": "Money Heist",
+      "year": 2017,
+      "rating": 8.3,
+      "eps": 9,
+      "genre": "Action, Crime, Mystery",
+      "sinopsis": "An enigmatic man, nicknamed The Professor, plans the biggest heist in history. To carry out this plan, he recruits eight of the country's top criminals who have nothing to lose: Tokyo, an experienced robber, Berlin, the ringleader, Moscow, the drilling expert, Rio, the computer scientist, Nairobi, the counterfeiter, Denver, son of Moscow, and Helsinki and Oslo, the Balkan war veterans.\n \nThe goal is to infiltrate the Royal Mint of Spain in order to print €2.4 billion in less than 11 days, without spelling a single drop of blood. The group takes 67 hostages, including the daughter of the British Ambassador. With the mastermind working on the outside, they always manage to stay one step ahead of the police.",
+      "poster": "https://timesofindia.indiatimes.com/thumb/75792614.cms?width=219&height=317&quality=80&imgsize=85583"
+    },
+    {
+      "tvShowId": "TV2",
+      "title": "The Falcon and the Winter Soldier",
+      "year": 2020,
+      "rating": 7.5,
+      "eps": 6,
+      "genre": "Action, Adventure, Drama",
+      "sinopsis": "Following the events of “Avengers: Endgame,” Sam Wilson/Falcon (Anthony Mackie) and Bucky Barnes/Winter Soldier (Sebastian Stan) team up in a global adventure that tests their abilities—and their patience—in Marvel Studios’ “The Falcon and The Winter Soldier.” The all-new series is directed by Kari Skogland; Malcolm Spellman is the head writer.",
+      "poster": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/falcws_lob_crd_03.jpg"
+    },
+    {
+      "tvShowId": "TV3",
+      "title": "Game of Thrones",
+      "year": 2011,
+      "rating": 9.3,
+      "eps": 10,
+      "genre": "Action, Adventure, Drama",
+      "sinopsis": "In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg"
+    },
+    {
+      "tvShowId": "TV4",
+      "title": "Attack on Titan",
+      "year": 2013,
+      "rating": 8.9,
+      "eps": 25,
+      "genre": "Animation, Action, Adventure",
+      "sinopsis": "Humans are nearly exterminated by giant creatures called Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest of titans. Flash forward to the present and the city has not seen a titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_.jpg"
+    },
+    {
+      "tvShowId": "TV5",
+      "title": "WandaVision",
+      "year": 2021,
+      "rating": 8.1,
+      "eps": 9,
+      "genre": "Action, Comedy, Drama",
+      "sinopsis": "Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjJiZmE5ZDgtYWUxZi00MWI1LTg2MmEtZmUwZGE2YzRkNTE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+    },
+    {
+      "tvShowId": "TV6",
+      "title": "Black Mirror",
+      "year": 2011,
+      "rating": 8.8,
+      "eps": 3,
+      "genre": "Drama, Sci-Fi, Thriller",
+      "sinopsis": "Set in a world only minutes from our own, \"Black Mirror\" unveils how modern technologies can backfire and be used against their makers, every episode set in a slightly different reality with different characters combating different types of technologies.",
+      "poster": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/black-mirror-font-1513096756.jpg"
+    },
+    {
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit",
+      "year": 2020,
+      "rating": 8.6,
+      "eps": 7,
+      "genre": "Drama",
+      "sinopsis": "Nine year-old orphan Beth Harmon is quiet, sullen, and by all appearances unremarkable. That is, until she plays her first game of chess. Her senses grow sharper, her thinking clearer, and for the first time in her life she feels herself fully in control. By the age of sixteen, she's competing for the U.S. Open championship. But as Beth hones her skills on the professional circuit, the stakes get higher, her isolation grows more frightening, and the thought of escape becomes all the more tempting. Based on the book by Walter Tevis.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg"
+    },
+    {
+      "tvShowId": "TV8",
+      "title": "Grey's Anatomy",
+      "year": 2005,
+      "rating": 7.6,
+      "eps": 9,
+      "genre": "Drama, Romance",
+      "sinopsis": "A medical based drama centered around Meredith Grey, an aspiring surgeon and daughter of one of the best surgeons, Dr. Ellis Grey. Throughout the series, Meredith goes through professional and personal challenges along with fellow surgeons at Seattle Grace Hospital.",
+      "poster": "https://static.wikia.nocookie.net/greysanatomy/images/6/62/GAS16Poster.jpg/revision/latest?cb=20190919161955"
+    },
+    {
+      "tvShowId": "TV9",
+      "title": "Dr. Stone",
+      "year": 2019,
+      "rating": 8.2,
+      "eps": 24,
+      "genre": "Animation, Action, Adventure",
+      "sinopsis": "One fateful day, all of humanity was petrified by a blinding flash of light. After several millennia, high schooler Taiju awakens and finds himself lost in a world of statues. However, he's not alone. His science-loving friend Senku's been up and running for a few months and he's got a grand plan in mind, to kickstart civilization with the power of science.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTI4YWNlNzMtNWU3Yi00OTBmLWEyOTYtZjAyYTM5NWZkMWM4XkEyXkFqcGdeQXVyMTI2NTY3NDg5._V1_.jpg"
+    },
+    {
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019,
+      "rating": 8.7,
+      "eps": 27,
+      "genre": "Animation, Action, Fantasy",
+      "sinopsis": "From the earliest times, the humanity knows about human-flesh eating monsters, lurking in the darkness to devour an unfortunate soul that does not trust rumors. However, the rumors also mention an elite corps of demon hunters, skilled assassins, killing demons. Demon Slayer focuses on Tanjirou Kamado, who is still very young, but is the only man in his family. One day, Tanjirou decides to go down to the local village to make a little money, selling charcoal. When he returns back, he becomes an unwilling part of these horrifying rumors: his family is slaughtered and the only survivor, his sister Nezuko, is turned into demon. For some reason, Nezuko still acts as a human, which is the reason for Tanjirou to join demon slayers and cure his sister. Will he manage to join the elite corps and cure his sister?",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV6eps1",
+      "tvShowId": "TV6",
+      "title": "Black Mirror : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV6eps2",
+      "tvShowId": "TV6",
+      "title": "Black Mirror : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV6eps3",
+      "tvShowId": "TV6",
+      "title": "Black Mirror : Episode 3",
+      "duration": 63
+    }
+  ]
+}

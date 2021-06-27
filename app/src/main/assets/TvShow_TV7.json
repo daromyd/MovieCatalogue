@@ -1,0 +1,46 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV7eps1",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV7eps2",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV7eps3",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV7eps4",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV7eps5",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV7eps6",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV7eps7",
+      "tvShowId": "TV7",
+      "title": "The Queen's Gambit : Episode 7",
+      "duration": 62
+    }
+  ]
+}

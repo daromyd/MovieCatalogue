@@ -1,0 +1,154 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV4eps1",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV4eps2",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV4eps3",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV4eps4",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV4eps5",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV4eps6",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV4eps7",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 7",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV4eps8",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 8",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV4eps9",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 9",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV4eps10",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 10",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV4eps11",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 11",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV4eps12",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 12",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV4ep13",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 13",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV4eps14",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 14",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV4eps15",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 15",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV4eps16",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 16",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV4eps17",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 17",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV4eps18",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 18",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV4eps19",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 19",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV4eps20",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 20",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV4eps21",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 21",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV4eps22",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 22",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV4eps23",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 23",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV4eps24",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 24",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV4eps25",
+      "tvShowId": "TV4",
+      "title": "Attack on Titan : Episode 25",
+      "duration": 62
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="posterDesc">Movie Poster</string>
+    <string name="title">Movie Title</string>
+    <string name="genre">Sci-Fi, Horror, Comedy</string>
+    <string name="year">2090</string>
+    <string name="rate">9.9</string>
+    <string name="shareDesc">Share Button</string>
+    <string name="episodeTitle">Title - Episode 1</string>
+    <string name="duration">%d min</string>
+
+    <string name="dummny">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis vehicula nunc. Nam pretium est at justo efficitur, eu mattis massa ornare. Vestibulum ac libero eros. Praesent rhoncus velit lectus, quis malesuada nisi eleifend eu. Donec dictum vestibulum lorem, sit amet hendrerit libero. Donec aliquam libero non sapien blandit, vitae commodo nibh consequat. Fusce vel nisl velit. Vestibulum non diam elementum, aliquam urna vitae, laoreet justo. Ut mollis purus justo, porta aliquam tellus rhoncus quis. Cras tempor quam cursus sapien dapibus aliquet. Maecenas ultrices fermentum odio, sed sodales nibh luctus at. Mauris ornare elementum eleifend. Sed ac nulla aliquam, congue nisl ut, pharetra est. Nunc faucibus quam ut gravida pulvinar.  Curabitur at feugiat ipsum. Suspendisse laoreet, massa mattis euismod ornare, lectus augue mollis sem, a eleifend elit felis ut felis. Pellentesque cursus mauris sed felis volutpat pretium. Curabitur blandit mi dapibus, euismod tellus a, porta lorem. Sed placerat tempor sem quis fermentum. Cras leo nisi, semper nec risus ut, imperdiet tincidunt nulla. Nullam blandit, nulla in dictum condimentum, nunc lacus semper nulla, a eleifend nisi est quis nisi. Pellentesque facilisis diam sit amet justo euismod, nec eleifend mi finibus. Maecenas tristique magna id felis dictum sollicitudin. Nam eget tincidunt velit. Morbi scelerisque congue orci, quis rutrum orci egestas dictum.  Phasellus ac lorem ac risus pretium ullamcorper non in mauris. Nulla pretium neque a ligula lacinia ullamcorper eget eget lectus. Vivamus porttitor mi vel neque interdum auctor. Nulla pretium mattis lorem, ac accumsan augue placerat eu. Fusce luctus, justo quis pretium scelerisque, quam ipsum fermentum diam, nec euismod ante elit ut est. Maecenas vitae lacus sagittis, posuere eros eu, suscipit dui. Nam semper molestie leo, ut dapibus nisi feugiat eget. Praesent blandit posuere nulla nec eleifend. Praesent tristique congue tellus id sodales. Aenean a magna sed diam efficitur ullamcorper a nec mi. Phasellus pretium felis ac fermentum faucibus.  Nunc vitae gravida mauris. Nunc semper, mi a luctus euismod, arcu est mollis nisi, et commodo arcu tellus et libero. Sed nec sem a ligula scelerisque elementum eget nec erat. Aliquam hendrerit ullamcorper lectus eu sagittis. Morbi at pulvinar mi. Praesent rhoncus mi vitae euismod ullamcorper. Fusce nec dolor sagittis, scelerisque tellus nec, convallis nunc. Sed feugiat magna non ullamcorper tincidunt. Praesent tristique sem molestie magna iaculis, quis lacinia est tempor. Aenean orci sapien, sodales sit amet lectus nec, sollicitudin interdum mi. Phasellus at neque ac quam rhoncus viverra. Nulla bibendum commodo neque eu semper.  In condimentum tempus suscipit. Praesent condimentum at nibh eget vestibulum. Ut nisi urna, mattis id erat sed, iaculis ultricies quam. Donec bibendum commodo iaculis. Cras rutrum lectus eget ex ultricies, nec laoreet quam convallis. Vivamus faucibus, metus at fermentum condimentum, erat arcu pulvinar odio, id hendrerit ex odio id lacus. Donec sit amet mauris odio. Pellentesque ac congue ligula. Vivamus et suscipit nulla. Maecenas eros massa, malesuada sagittis suscipit at, porttitor in nisi. Vestibulum ullamcorper varius felis. Maecenas commodo ultricies felis, et hendrerit sem dapibus sodales. Sed tincidunt dignissim dui a molestie. Nunc consectetur, elit in maximus euismod, purus mi sodales mauris, non mollis diam nunc ac arcu.</string>
+    <string name="storyline">Storyline</string>
+    <string name="sinopsis">Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he\'s given a ride on enemy lines. That ride ends badly when Stark\'s Humvee that he\'s riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony\'s technology for other matters.</string>
+    <string name="movie">Movie</string>
+    <string name="tvShow">TV Show</string>
+    <string name="episode">%d episode</string>
+    <string name="eps">Episode</string>
+    <string name="example">Example</string>
+    <string name="copyright">Made By Daromyd</string>
+    <string name="favorite">Favorite</string>
+    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
+    <string name="message_ok">OK</string>
+
+</resources>

@@ -1,0 +1,104 @@
+{
+  "movies": [
+    {
+      "movieId": "M1",
+      "title": "The Greatest Showman",
+      "year": 2017,
+      "rating": 7.6,
+      "duration": 105,
+      "genre": "Biography, Drama, Musical",
+      "sinopsis": "Orphaned, penniless, but ambitious and with a mind crammed with imagination and fresh ideas, the American entertainer, Phineas Taylor Barnum, will always be remembered as the man with the gift to blur the line between reality and fiction. Thirsty for innovation and hungry for success, the son of a tailor manages to open a wax museum; however, he soon shifts focus to the unique and the peculiar, introducing extraordinary, never-seen-before live acts on the circus stage. Now, some people call Barnum's rich collection of oddities, an outright freak show; but, when Phineas, obsessed for cheers and respectability, gambles everything on the opera singer, Jenny Lind, to appeal to a high-brow audience, he will lose sight of the most crucial aspect of his life: his family. Will Barnum, the greatest showman, risk it all to be accepted?",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png"
+    },
+    {
+      "movieId": "M2",
+      "title": "Who Am I",
+      "year": 2014,
+      "rating": 7.5,
+      "duration": 102,
+      "genre": "Crime, Drama, Mystery",
+      "sinopsis": "Benjamin (TOM SCHILLING) is invisible, a nobody. This changes abruptly when he meets charismatic Max (ELYAS M'BAREK). Even though they couldn't seem more different from the outside, they share the same interest: hacking. Together with Max's friends, the impulsive Stephan (WOTAN WILKE MÖHRING) and paranoid Paul (ANTOINE MONOT), they form the subversive Hacker collective CLAY (CLOWNS LAUGHING @ YOU). CLAY provokes with fun campaigns and speaks for a whole generation. For the first time in his life, Benjamin is part of something and even the attractive Marie (HANNAH HERZSPRUNG) begins noticing him. But fun turns into deadly danger when CLAY appears on the BKA's (Bundeskriminalamt, Federal Criminal Police Office) as well as Europol's most wanted list. Hunted by Cybercrime investigator Hanne Lindberg (TRINE DYRHOLM), Benjamin is no longer a nobody, but instead one of the most wanted hackers in the world.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/5/5c/Who_am_I_movie_poster.jpg"
+    },
+    {
+      "movieId": "M3",
+      "title": "How to Train Your Dragon: The Hidden World",
+      "year": 2019,
+      "rating": 7.5,
+      "duration": 104,
+      "genre": "Animation, Action, Adventure",
+      "sinopsis": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless' discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup's reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/f/fd/How_to_Train_Your_Dragon_3_poster.png"
+    },
+    {
+      "movieId": "M4",
+      "title": "2 Fast 2 Furious",
+      "year": 2003,
+      "rating": 5.9,
+      "duration": 107,
+      "genre": "Action, Crime, Thriller",
+      "sinopsis": "EX LAPD cop Brian O'Conner (Paul Walker) teams up with his ex-con friend Roman Pearce (Tyrese Gibson) and works with undercover U.S. Customs Service agent Monica Fuentes (Eva Mendes) to bring Miami-based drug lord Carter Verone (Cole Hauser) down.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/9/9d/Two_fast_two_furious_ver5.jpg"
+    },
+    {
+      "movieId": "M5",
+      "title": "Hansel & Gretel: Witch Hunters",
+      "year": 2013,
+      "rating": 6.1,
+      "duration": 88,
+      "genre": "Action, Fantasy, Horror",
+      "sinopsis": "The siblings Hansel and Gretel are left alone in the woods by their father and captured by a dark witch in a candy house. However they kill the witch and escape from the spot. Years later, the orphans have become famous witch hunters. When eleven children go missing in a small village, the Mayor summons Hansel and Gretel to rescue them, and they save the red haired Mina from the local sheriff who wants to burn her, accusing Mina of witchcraft. Soon they discover that the Blood Moon will approach in three days and the powerful dark witch Muriel is responsible for the abduction of children. She intends to use the children together with a secret ingredient in a Sabbath to make the coven of witches protected against the fire. Meanwhile Hansel and Gretel disclose secrets about their parents.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/88/Hansel_and_Gretel_Witch_Hunters_.jpg"
+    },
+    {
+      "movieId": "M6",
+      "title": "Iron Man",
+      "year": 2008,
+      "rating": 7.9,
+      "duration": 126,
+      "genre": "Action, Adventure, Sci-Fi",
+      "sinopsis": "Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters.",
+      "poster": "https://assets-a1.kompasiana.com/items/album/2019/02/11/infosinopsisdotblogspot-5c61477bbde57513bc5d21a7.jpg"
+    },
+    {
+      "movieId": "M7",
+      "title": "Spider-Man: Far from Home",
+      "year": 2019,
+      "rating": 7.5,
+      "duration": 129,
+      "genre": "Action, Adventure, Sci-Fi",
+      "sinopsis": "Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter's plan to leave super heroics behind for a few weeks are quickly scrapped when he begrudgingly agrees to help Nick Fury uncover the mystery of several elemental creature attacks, creating havoc across the continent.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/b/bd/Spider-Man_Far_From_Home_poster.jpg"
+    },
+    {
+      "movieId": "M8",
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "rating": 8.4,
+      "duration": 164,
+      "genre": "Action, Adventure",
+      "sinopsis": "Despite his tarnished reputation after the events of The Dark Knight (2008), in which he took the rap for Dent's crimes, Batman feels compelled to intervene to assist the city and its Police force, which is struggling to cope with Bane's plans to destroy the city.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg"
+    },
+    {
+      "movieId": "M9",
+      "title": "Joker",
+      "year": 2019,
+      "rating": 8.4,
+      "duration": 122,
+      "genre": "Crime, Drama, Thriller",
+      "sinopsis": "Arthur Fleck works as a clown and is an aspiring stand-up comic. He has mental health issues, part of which involves uncontrollable laughter. Times are tough and, due to his issues and occupation, Arthur has an even worse time than most. Over time these issues bear down on him, shaping his actions, making him ultimately take on the persona he is more known as...Joker.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg"
+    },
+    {
+      "movieId": "M10",
+      "title": "Despicable Me",
+      "year": 2010,
+      "rating": 7.6,
+      "duration": 95,
+      "genre": "Animation, Comedy, Crime",
+      "sinopsis": "In a happy suburban neighborhood surrounded by white picket fences with flowering rose bushes, sits a black house with a dead lawn. Unbeknownst to the neighbors, hidden beneath this house is a vast secret hideout. Surrounded by a small army of minions, we discover Gru (Steve Carell), planning the biggest heist in the history of the world. He is going to steal the moon. Gru delights in all things wicked. Armed with his arsenal of shrink rays, freeze rays, and battle-ready vehicles for land and air, he vanquishes all who stand in his way. Until the day he encounters the immense will of three little orphaned girls who look at him and see something that no one else has ever seen: a potential Dad. The world's greatest villain has just met his greatest challenge: three little girls named Margo (Miranda Cosgrove), Edith (Dana Gaier), and Agnes (Elsie Fisher).",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_.jpg"
+    }
+  ]
+}

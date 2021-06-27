@@ -1,0 +1,64 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV3eps1",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV3eps2",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV3eps3",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV3eps4",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV3eps5",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV3eps6",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV3eps7",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 7",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV3eps8",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 8",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV3eps9",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 9",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV3eps10",
+      "tvShowId": "TV3",
+      "title": "Game of Thrones : Episode 10",
+      "duration": 66
+    }
+  ]
+}

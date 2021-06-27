@@ -1,0 +1,148 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV9eps1",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV9eps2",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV9eps3",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV9eps4",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV9eps5",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV9eps6",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV9eps7",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 7",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV9eps8",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 8",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV9eps9",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 9",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV9eps10",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 10",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV9eps11",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 11",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV9eps12",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 12",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV9ep13",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 13",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV9eps14",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 14",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV9eps15",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 15",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV9eps16",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 16",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV9eps17",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 17",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV9eps18",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 18",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV9eps19",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 19",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV9eps20",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 20",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV9eps21",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 21",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV9eps22",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 22",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV9eps23",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 23",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV9eps24",
+      "tvShowId": "TV9",
+      "title": "Dr. Stone : Episode 24",
+      "duration": 61
+    }
+  ]
+}

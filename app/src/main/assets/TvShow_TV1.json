@@ -1,0 +1,58 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV1eps1",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV1eps2",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV1eps3",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV1eps4",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV1eps5",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV1eps6",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV1eps7",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 7",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV1eps8",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 8",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV1eps9",
+      "tvShowId": "TV1",
+      "title": "Money Heist : Episode 9",
+      "duration": 64
+    }
+  ]
+}

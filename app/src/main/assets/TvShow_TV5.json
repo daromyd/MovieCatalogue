@@ -1,0 +1,58 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV5eps1",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV5eps2",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV5eps3",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV5eps4",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV5eps5",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV5eps6",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV5eps7",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 7",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV5eps8",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 8",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV5eps9",
+      "tvShowId": "TV5",
+      "title": "WandaVision : Episode 9",
+      "duration": 64
+    }
+  ]
+}

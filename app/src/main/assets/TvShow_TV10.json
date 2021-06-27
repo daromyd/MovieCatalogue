@@ -1,0 +1,166 @@
+{
+  "episodes": [
+    {
+      "episodeId": "TV10eps1",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 1",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV10eps2",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 2",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV10eps3",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 3",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV10eps4",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 4",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV10eps5",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 5",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV10eps6",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 6",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV10eps7",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 7",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV10eps8",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 8",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV10eps9",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 9",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV10eps10",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 10",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV10eps11",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 11",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV10eps12",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 12",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV10ep13",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 13",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV10eps14",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 14",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV10eps15",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 15",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV10eps16",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 16",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV10eps17",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 17",
+      "duration": 68
+    },
+    {
+      "episodeId": "TV10eps18",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 18",
+      "duration": 64
+    },
+    {
+      "episodeId": "TV10eps19",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 19",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV10eps20",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 20",
+      "duration": 65
+    },
+    {
+      "episodeId": "TV10eps21",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 21",
+      "duration": 63
+    },
+    {
+      "episodeId": "TV10eps22",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 22",
+      "duration": 67
+    },
+    {
+      "episodeId": "TV10eps23",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 23",
+      "duration": 60
+    },
+    {
+      "episodeId": "TV10eps24",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 24",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV10eps25",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 25",
+      "duration": 62
+    },
+    {
+      "episodeId": "TV10eps26",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 26",
+      "duration": 61
+    },
+    {
+      "episodeId": "TV10eps27",
+      "tvShowId": "TV10",
+      "title": "Demon Slayer: Kimetsu no Yaiba : Episode 27",
+      "duration": 62
+    }
+  ]
+}
