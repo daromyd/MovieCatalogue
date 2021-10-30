@@ -14,7 +14,6 @@ import java.util.*
 class EpisodeAdapter: RecyclerView.Adapter<EpisodeAdapter.ListViewHolder>() {
 
     private var listData = ArrayList<Episode>()
-    var onItemClick: ((Episode) -> Unit)? = null
 
     fun setData(newListData: List<Episode>?) {
         if (newListData == null) return

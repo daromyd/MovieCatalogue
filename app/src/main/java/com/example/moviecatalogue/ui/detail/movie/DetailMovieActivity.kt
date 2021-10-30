@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.core.domain.model.Movie
-import com.example.moviecatalogue.core.ui.EpisodeAdapter
 import com.example.moviecatalogue.databinding.ActivityDetailMovieBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.text.SimpleDateFormat
@@ -28,7 +27,6 @@ class DetailMovieActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val episodeAdapter = EpisodeAdapter()
 
         val detailMovie = intent.getParcelableExtra<Movie>(EXTRA_DATA)
         showDetailMovie(detailMovie)

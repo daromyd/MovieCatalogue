@@ -40,15 +40,16 @@ object DataMapper {
             )
         }
 
-    fun mapMovieDomainToEntity(input: Movie) = MovieEntity(
-        id = input.id,
-        title = input.title,
-        release = input.release,
-        rating = input.rate,
-        overview = input.overview,
-        imageUrl = input.imageUrl,
-        isFav = input.isFav
-    )
+    fun mapMovieDomainToEntity(input: Movie) =
+        MovieEntity(
+            id = input.id,
+            title = input.title,
+            release = input.release,
+            rating = input.rate,
+            overview = input.overview,
+            imageUrl = input.imageUrl,
+            isFav = input.isFav
+        )
 
     fun mapTvShowResponseToEntities(input: List<TvShowResponse>): List<TvShowEntity>{
         val tvShowList = ArrayList<TvShowEntity>()
@@ -80,15 +81,16 @@ object DataMapper {
             )
         }
 
-    fun mapTvShowDomainToEntity(input: Movie) = TvShowEntity(
-        id = input.id,
-        name = input.title,
-        release = input.release,
-        rating = input.rate,
-        overview = input.overview,
-        imageUrl = input.imageUrl,
-        isFav = input.isFav
-    )
+    fun mapTvShowDomainToEntity(input: Movie) =
+        TvShowEntity(
+            id = input.id,
+            name = input.title,
+            release = input.release,
+            rating = input.rate,
+            overview = input.overview,
+            imageUrl = input.imageUrl,
+            isFav = input.isFav
+        )
 
     fun mapEpisodeResponseToDomain(input: List<EpisodeResponse>): List<Episode>{
         val episodeList = ArrayList<Episode>()

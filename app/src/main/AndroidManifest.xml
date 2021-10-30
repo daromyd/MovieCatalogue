@@ -14,10 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCatalogue"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.favorite.FavoriteActivity"></activity>
+        <activity android:name=".ui.favorite.FavoriteActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,15 +29,18 @@
         <activity
             android:name=".ui.detail.movie.DetailMovieActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false">
         </activity>
         <activity
             android:name=".ui.detail.tvshow.DetailTvShowActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false">
 
         </activity>
-        <activity android:name=".ui.home.MainActivity" />
+        <activity android:name=".ui.home.MainActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

@@ -14,13 +14,13 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class MovieCatalogueRepository(
-        private val remoteDataSource: RemoteDataSource,
-        private val localDataSource: LocalDataSource,
-        private val appExecutors: AppExecutors
+    private val remoteDataSource: RemoteDataSource,
+    private val localDataSource: LocalDataSource,
+    private val appExecutors: AppExecutors
 ) : IMovieCatalogueRepository {
 
         override fun getAllMovie(): Flow<Resource<List<Movie>>> =
-                object : NetworkBoundResource<List<Movie>, List<MovieResponse>>(){
+                object : com.example.moviecatalogue.core.data.NetworkBoundResource<List<Movie>, List<MovieResponse>>(){
                         override fun loadFromDB(): Flow<List<Movie>> {
                                 return localDataSource.getAllMovie().map { DataMapper.mapMovieEntitiesToDomain(it) }
                         }
@@ -48,7 +48,7 @@ class MovieCatalogueRepository(
         }
 
         override fun getAllTvShow(): Flow<Resource<List<Movie>>> =
-                object : NetworkBoundResource<List<Movie>, List<TvShowResponse>>(){
+                object : com.example.moviecatalogue.core.data.NetworkBoundResource<List<Movie>, List<TvShowResponse>>(){
                         override fun loadFromDB(): Flow<List<Movie>> {
                                 return localDataSource.getAllTvShow().map { DataMapper.mapTvShowEntitiesToDomain(it) }
                         }
@@ -77,7 +77,6 @@ class MovieCatalogueRepository(
 
         override suspend fun getEpisode(id: Int): List<Episode> {
                 val remoteData = remoteDataSource.getEpisode(id)
-                val mapper = DataMapper.mapEpisodeResponseToDomain(remoteData)
-                return mapper
+                return DataMapper.mapEpisodeResponseToDomain(remoteData)
         }
 }

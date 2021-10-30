@@ -19,7 +19,6 @@ class RemoteDataSource(private val apiService: ApiService) {
 
 
     suspend fun getAllMovie(): Flow<ApiResponse<List<MovieResponse>>> {
-        //get data from remote api
         return flow {
             try {
                 val response = apiService.getTrendingMovie(key)
@@ -37,7 +36,6 @@ class RemoteDataSource(private val apiService: ApiService) {
     }
 
     suspend fun getAllTvShow(): Flow<ApiResponse<List<TvShowResponse>>> {
-        //get data from remote api
         return flow {
             try {
                 val response = apiService.getTrendingTvShow(key)

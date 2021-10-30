@@ -12,9 +12,9 @@ class MovieCatalogueInteractor(private val movieCatalogueRepository: IMovieCatal
 
     override fun setFavoriteMovie(movie: Movie, state: Boolean) = movieCatalogueRepository.setFavoriteMovie(movie, state)
 
-    override fun getAllTvShow(): Flow<Resource<List<Movie>>> = movieCatalogueRepository.getAllTvShow()
+    override fun getAllTvShow() = movieCatalogueRepository.getAllTvShow()
 
-    override fun getFavoriteTvShow(): Flow<List<Movie>> = movieCatalogueRepository.getFavoriteTvShow()
+    override fun getFavoriteTvShow()= movieCatalogueRepository.getFavoriteTvShow()
 
     override fun setFavoriteTvShow(tvShow: Movie, state: Boolean) = movieCatalogueRepository.setFavoriteTvShow(tvShow, state)
 
