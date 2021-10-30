@@ -1,60 +1,72 @@
 package com.example.moviecatalogue.ui.movies
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.moviecatalogue.core.data.Resource
+import com.example.moviecatalogue.core.ui.MoviesAdapter
 import com.example.moviecatalogue.databinding.FragmentMoviesBinding
-import com.example.moviecatalogue.viewModel.ViewModelFactory
-import com.example.moviecatalogue.vo.Status
+import com.example.moviecatalogue.ui.detail.movie.DetailMovieActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class MoviesFragment : Fragment() {
 
-    private lateinit var fragmentMovieBinding: FragmentMoviesBinding
+    private val movieViewModel : MovieViewModel by viewModel()
+    private var _binding: FragmentMoviesBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        fragmentMovieBinding = FragmentMoviesBinding.inflate(layoutInflater, container, false)
-        return fragmentMovieBinding.root
+        _binding = FragmentMoviesBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         if (activity != null){
-            val factory = ViewModelFactory.getInstance(requireActivity())
-            val viewModel = ViewModelProvider(this, factory)[MovieViewModel::class.java]
 
-            val moviesAdapter = MoviesAdapter()
+            val movieAdapter = MoviesAdapter()
+            movieAdapter.onItemClick = { selectedData ->
+                val intent = Intent(activity, DetailMovieActivity::class.java)
+                intent.putExtra(DetailMovieActivity.EXTRA_DATA, selectedData)
+                startActivity(intent)
+            }
 
-            viewModel.getMovies().observe(this, { movies ->
-                if (movies != null){
-                    when(movies.status){
-                        Status.LOADING -> fragmentMovieBinding.progressBar.visibility = View.VISIBLE
-                        Status.SUCCESS -> {
-                            fragmentMovieBinding.progressBar.visibility = View.GONE
-                            moviesAdapter.submitList(movies.data)
+            movieViewModel.movie.observe(viewLifecycleOwner, { movie ->
+                if (movie != null){
+                    when(movie){
+                        is Resource.Loading -> binding.progressBar.visibility = View.VISIBLE
+                        is Resource.Success -> {
+                            binding.progressBar.visibility = View.GONE
+                            movieAdapter.setData(movie.data)
                         }
-                        Status.ERROR -> {
-                            fragmentMovieBinding.progressBar.visibility = View.GONE
-                            Toast.makeText(context, "Terjadi kesalahan", Toast.LENGTH_SHORT).show()
+                        is Resource.Error -> {
+                            binding.progressBar.visibility = View.GONE
+                            Toast.makeText(context, movie.message, Toast.LENGTH_LONG).show()
                         }
                     }
                 }
             })
 
-            with(fragmentMovieBinding.rvMovies){
-                layoutManager = LinearLayoutManager(context)
+            with(binding.rvMovies){
+                layoutManager = GridLayoutManager(context, 2)
                 setHasFixedSize(true)
-                adapter = moviesAdapter
+                adapter = movieAdapter
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

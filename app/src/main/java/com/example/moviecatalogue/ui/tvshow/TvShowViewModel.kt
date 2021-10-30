@@ -1,13 +1,10 @@
 package com.example.moviecatalogue.ui.tvshow
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import androidx.paging.PagedList
-import com.example.moviecatalogue.data.MovieCatalogueRepository
-import com.example.moviecatalogue.data.source.local.entity.TvShowEntity
-import com.example.moviecatalogue.vo.Resource
+import androidx.lifecycle.asLiveData
+import com.example.moviecatalogue.core.domain.usecase.MovieCatalogueUseCase
 
-class TvShowViewModel(private val movieCatalogueRepository: MovieCatalogueRepository) : ViewModel(){
+class TvShowViewModel(movieCatalogueUseCase: MovieCatalogueUseCase) : ViewModel(){
 
-    fun getTvShow(): LiveData<Resource<PagedList<TvShowEntity>>> = movieCatalogueRepository.getAllTvShows()
+    val tvShow = movieCatalogueUseCase.getAllTvShow().asLiveData()
 }

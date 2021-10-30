@@ -1,80 +1,59 @@
 package com.example.moviecatalogue.ui.favorite.movie
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.ItemTouchHelper
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.moviecatalogue.R
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.moviecatalogue.core.ui.MoviesAdapter
 import com.example.moviecatalogue.databinding.FragmentFavMovieBinding
-import com.example.moviecatalogue.viewModel.ViewModelFactory
-import com.google.android.material.snackbar.Snackbar
+import com.example.moviecatalogue.ui.detail.movie.DetailMovieActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FavMovieFragment : Fragment() {
 
-    private lateinit var fragmentFavMovieBinding: FragmentFavMovieBinding
-    private lateinit var viewModel: FavMovieViewModel
-    private lateinit var moviesAdapter: FavMovieAdapter
+    private val favMovieViewModel: FavMovieViewModel by viewModel()
+    private var _binding: FragmentFavMovieBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        fragmentFavMovieBinding = FragmentFavMovieBinding.inflate(layoutInflater, container, false)
-        return fragmentFavMovieBinding.root
+        _binding = FragmentFavMovieBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        itemTouchHelper.attachToRecyclerView(fragmentFavMovieBinding.rvFavMovies)
 
         if (activity != null){
-            val factory = ViewModelFactory.getInstance(requireActivity())
-            viewModel = ViewModelProvider(this, factory)[FavMovieViewModel::class.java]
+            val favMovieAdapter = MoviesAdapter()
+            favMovieAdapter.onItemClick = { selectedData ->
+                val intent = Intent(activity, DetailMovieActivity::class.java)
+                intent.putExtra(DetailMovieActivity.EXTRA_DATA, selectedData)
+                startActivity(intent)
+            }
 
-            moviesAdapter = FavMovieAdapter()
-
-            viewModel.getFavMovie().observe(this, { favMovies ->
-                if (favMovies != null){
-                    fragmentFavMovieBinding.progressBar.visibility = View.GONE
-                    moviesAdapter.submitList(favMovies)
-
-                }
+            favMovieViewModel.favoriteMovie.observe(viewLifecycleOwner, { data ->
+                favMovieAdapter.setData(data)
+                binding.viewEmpty.root.visibility = if (data.isNotEmpty()) View.GONE else View.VISIBLE
             })
 
-            with(fragmentFavMovieBinding.rvFavMovies){
-                layoutManager = LinearLayoutManager(context)
+            with(binding.rvFavMovies) {
+                layoutManager = GridLayoutManager(context, 2)
                 setHasFixedSize(true)
-                adapter = moviesAdapter
+                adapter = favMovieAdapter
             }
 
         }
     }
 
-    private val itemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.Callback() {
-        override fun getMovementFlags(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int =
-            makeMovementFlags(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT)
-
-        override fun onMove(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, target: RecyclerView.ViewHolder): Boolean = true
-
-        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-            if (view != null) {
-                val swipedPosition = viewHolder.adapterPosition
-                val movieEntity = moviesAdapter.getSwipedData(swipedPosition)
-
-                movieEntity?.let { viewModel.setFav(it) }
-
-                val snackbar = Snackbar.make(view as View, R.string.message_undo, Snackbar.LENGTH_LONG)
-                snackbar.setAction(R.string.message_ok) { _ ->
-                    movieEntity?.let { viewModel.setFav(it) }
-                }
-                snackbar.show()
-            }
-        }
-    })
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

@@ -1,13 +1,10 @@
 package com.example.moviecatalogue.ui.movies
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import androidx.paging.PagedList
-import com.example.moviecatalogue.data.MovieCatalogueRepository
-import com.example.moviecatalogue.data.source.local.entity.MovieEntity
-import com.example.moviecatalogue.vo.Resource
+import androidx.lifecycle.asLiveData
+import com.example.moviecatalogue.core.domain.usecase.MovieCatalogueUseCase
 
-class MovieViewModel(private val movieCatalogueRepository: MovieCatalogueRepository) : ViewModel() {
+class MovieViewModel(movieCatalogueUseCase: MovieCatalogueUseCase) : ViewModel() {
 
-    fun getMovies(): LiveData<Resource<PagedList<MovieEntity>>> = movieCatalogueRepository.getAllMovies()
+    val movie = movieCatalogueUseCase.getAllMovie().asLiveData()
 }

@@ -6,6 +6,7 @@
     android:id="@+id/cv_item_episode"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="8dp"
     android:orientation="vertical"
     app:cardCornerRadius="4dp"
     app:cardElevation="4dp"
@@ -15,50 +16,53 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_item"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="4dp">
 
         <ImageView
             android:id="@+id/img_movie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:src="@drawable/ic_baseline_circle_24"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_item_duration"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_item_episode_title"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/tv_item_episode_title"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:ellipsize="end"
-            android:gravity="start"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/img_movie"
             app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
             app:layout_constraintStart_toEndOf="@+id/img_movie"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/episodeTitle"/>
+            app:layout_constraintTop_toTopOf="@+id/img_movie">
 
-        <TextView
-            android:id="@+id/tv_item_duration"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="4dp"
-            android:gravity="start"
-            android:textColor="?attr/colorOnSecondary"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/tv_item_episode_title"
-            app:layout_constraintStart_toStartOf="@+id/tv_item_episode_title"
-            app:layout_constraintTop_toBottomOf="@+id/tv_item_episode_title"
-            tools:text="@string/duration" />
+            <TextView
+                android:id="@+id/tv_item_episode_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/episodeTitle" />
+
+            <TextView
+                android:id="@+id/tv_item_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="?attr/colorOnSecondary"
+                tools:text="@string/overview" />
+        </LinearLayout>
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

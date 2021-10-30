@@ -1,104 +1,80 @@
 package com.example.moviecatalogue.ui.detail.movie
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.bumptech.glide.request.RequestOptions
 import com.example.moviecatalogue.R
-import com.example.moviecatalogue.data.source.local.entity.MovieEntity
+import com.example.moviecatalogue.core.domain.model.Movie
+import com.example.moviecatalogue.core.ui.EpisodeAdapter
 import com.example.moviecatalogue.databinding.ActivityDetailMovieBinding
-import com.example.moviecatalogue.databinding.ContentDetailMovieBinding
-import com.example.moviecatalogue.viewModel.ViewModelFactory
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.text.SimpleDateFormat
 
 class DetailMovieActivity : AppCompatActivity() {
 
     companion object{
-        const val EXTRA_ID = "extra_id"
+        const val EXTRA_DATA = "extra_data"
     }
 
-    private lateinit var activityDetailMovieBinding: ActivityDetailMovieBinding
-    private lateinit var contentBinding: ContentDetailMovieBinding
+    private val detailMovieViewModel : DetailMovieViewModel by viewModel()
+    private lateinit var binding: ActivityDetailMovieBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityDetailMovieBinding = ActivityDetailMovieBinding.inflate(layoutInflater)
-        contentBinding = activityDetailMovieBinding.detailContent
-        setContentView(activityDetailMovieBinding.root)
+        binding = ActivityDetailMovieBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setSupportActionBar(activityDetailMovieBinding.toolbar)
+        setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val factory = ViewModelFactory.getInstance(this)
-        val viewModel = ViewModelProvider(this, factory)[DetailMovieViewModel::class.java]
+        val episodeAdapter = EpisodeAdapter()
 
-        val extras = intent.extras
-        if (extras != null){
-            val movieId = extras.getString(EXTRA_ID)
-            if (movieId != null){
+        val detailMovie = intent.getParcelableExtra<Movie>(EXTRA_DATA)
+        showDetailMovie(detailMovie)
+    }
 
-                activityDetailMovieBinding.progressBar.visibility = View.VISIBLE
-                activityDetailMovieBinding.appBar.visibility = View.GONE
-                activityDetailMovieBinding.content.visibility = View.GONE
+    private fun showDetailMovie(detailMovie: Movie?) {
+        detailMovie?.let {
+            with(binding.detailContent){
+                tvDetailTitle.text = detailMovie.title
+                tvDetailYear.text = dateFormat(detailMovie.release)
+                tvDetailRate.text = detailMovie.rate.toString()
+                tvDetailSinopsis.text = detailMovie.overview
+            }
 
-                viewModel.setSelectedMovie(movieId)
+            Glide.with(this)
+                .load("https://image.tmdb.org/t/p/original${detailMovie.imageUrl}")
+                .into(binding.imgDetailMovie)
 
-                viewModel.getMovie().observe(this, { movie ->
-                    if (movie != null){
-                        activityDetailMovieBinding.progressBar.visibility = View.GONE
-                        activityDetailMovieBinding.appBar.visibility = View.VISIBLE
-                        activityDetailMovieBinding.content.visibility = View.VISIBLE
-
-                        populateMovie(movie)
-
-                        setFavState(movie.isFav)
-
-                        activityDetailMovieBinding.btnFavMovie.setOnClickListener {
-                            if (movie.isFav){
-                                Toast.makeText(this, "${movie.title} remove from favorite!", Toast.LENGTH_SHORT).show()
-                            }else{
-                                Toast.makeText(this, "${movie.title} added to favorite!", Toast.LENGTH_SHORT).show()
-                            }
-                            viewModel.setFavMovie(movie)
-                        }
-                    }
-                })
-
+            var favStatus = detailMovie.isFav
+            setFavState(favStatus)
+            binding.btnFavMovie.setOnClickListener {
+                favStatus = !favStatus
+                detailMovieViewModel.setFavoriteMovie(detailMovie, favStatus)
+                setFavState(favStatus)
             }
         }
     }
 
-    private fun populateMovie(movieEntity: MovieEntity) {
-        with(contentBinding){
-            tvDetailTitle.text = movieEntity.title
-            tvDetailYear.text = movieEntity.year.toString()
-            tvDetailDuration.text = resources.getString(R.string.duration, movieEntity.duration)
-            tvDetailGenre.text = movieEntity.genre
-            tvDetailRate.text = movieEntity.rating.toString()
-            tvDetailSinopsis.text = movieEntity.sinopsis
-        }
-
-        Glide.with(this)
-                .load(movieEntity.poster)
-                .transition(DrawableTransitionOptions.withCrossFade())
-                .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
-                        .error(R.drawable.ic_error))
-                .into(activityDetailMovieBinding.imgDetailMovie)
-    }
-
     private fun setFavState(state: Boolean) {
         if (state){
-            activityDetailMovieBinding.btnFavMovie.setImageResource(R.drawable.ic_baseline_favorite_24)
+            binding.btnFavMovie.setImageResource(R.drawable.ic_baseline_favorite_24)
         }else{
-            activityDetailMovieBinding.btnFavMovie.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+            binding.btnFavMovie.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }
     }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    @SuppressLint("SimpleDateFormat")
+    private fun dateFormat(date: String): String{
+        val cutFormatter = SimpleDateFormat("yyyy-MM-dd")
+        val dateObject = cutFormatter.parse(date)
+        val postFormatter = SimpleDateFormat("dd MMMM yyyy")
+        return postFormatter.format(dateObject)
     }
 }
