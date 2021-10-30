@@ -14,8 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCatalogue"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.favorite.FavoriteActivity"
-            android:exported="false"></activity>
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
             android:theme="@style/SplashTheme"

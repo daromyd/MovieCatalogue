@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.ui.favorite.movie
+package com.example.moviecatalogue.favorite.movie
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.moviecatalogue.core.ui.MoviesAdapter
-import com.example.moviecatalogue.databinding.FragmentFavMovieBinding
+import com.example.moviecatalogue.favorite.databinding.FragmentFavMovieBinding
+import com.example.moviecatalogue.favorite.favoriteModule
 import com.example.moviecatalogue.ui.detail.movie.DetailMovieActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.core.context.loadKoinModules
 
 class FavMovieFragment : Fragment() {
 
@@ -29,6 +31,8 @@ class FavMovieFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        loadKoinModules(favoriteModule)
 
         if (activity != null){
             val favMovieAdapter = MoviesAdapter()

@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.ui.favorite.tvshow
+package com.example.moviecatalogue.favorite.tvshow
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData

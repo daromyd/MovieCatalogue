@@ -1,13 +1,13 @@
 package com.example.moviecatalogue.ui.home
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.databinding.ActivityMainBinding
-import com.example.moviecatalogue.ui.favorite.FavoriteActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
@@ -33,7 +33,10 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when(item.itemId){
-            R.id.action_fav -> startActivity(Intent(this@MainActivity, FavoriteActivity::class.java))
+            R.id.action_fav -> {
+                val uri = Uri.parse("moviecatalogue://favorite")
+                startActivity(Intent(Intent.ACTION_VIEW, uri))
+            }
         }
 
         return super.onOptionsItemSelected(item)
