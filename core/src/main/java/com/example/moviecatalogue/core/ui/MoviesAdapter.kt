@@ -33,6 +33,7 @@ class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.ListViewHolder>() {
 
     override fun getItemCount(): Int = listData.size
 
+    @Suppress("DEPRECATION")
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemMoviesBinding.bind(itemView)
         fun bind(data: Movie) {
@@ -60,6 +61,6 @@ class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.ListViewHolder>() {
         val cutFormatter = SimpleDateFormat("yyyy-MM-dd")
         val dateObject = cutFormatter.parse(date)
         val postFormatter = SimpleDateFormat("dd MMMM yyyy")
-        return postFormatter.format(dateObject)
+        return postFormatter.format(dateObject!!)
     }
 }

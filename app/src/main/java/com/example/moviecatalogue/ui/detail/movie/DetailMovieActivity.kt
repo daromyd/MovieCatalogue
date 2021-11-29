@@ -2,6 +2,7 @@ package com.example.moviecatalogue.ui.detail.movie
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.moviecatalogue.R
@@ -11,10 +12,6 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.text.SimpleDateFormat
 
 class DetailMovieActivity : AppCompatActivity() {
-
-    companion object{
-        const val EXTRA_DATA = "extra_data"
-    }
 
     private val detailMovieViewModel : DetailMovieViewModel by viewModel()
     private lateinit var binding: ActivityDetailMovieBinding
@@ -51,6 +48,11 @@ class DetailMovieActivity : AppCompatActivity() {
                 favStatus = !favStatus
                 detailMovieViewModel.setFavoriteMovie(detailMovie, favStatus)
                 setFavState(favStatus)
+                if (favStatus){
+                    Toast.makeText(this, getString(R.string.add_favorite), Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, getString(R.string.removed_favorite), Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
@@ -73,6 +75,10 @@ class DetailMovieActivity : AppCompatActivity() {
         val cutFormatter = SimpleDateFormat("yyyy-MM-dd")
         val dateObject = cutFormatter.parse(date)
         val postFormatter = SimpleDateFormat("dd MMMM yyyy")
-        return postFormatter.format(dateObject)
+        return postFormatter.format(dateObject!!)
+    }
+
+    companion object{
+        const val EXTRA_DATA = "extra_data"
     }
 }

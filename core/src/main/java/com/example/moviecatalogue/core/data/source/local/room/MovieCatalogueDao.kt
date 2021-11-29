@@ -1,8 +1,6 @@
 package com.example.moviecatalogue.core.data.source.local.room
 
 import androidx.room.*
-import com.example.moviecatalogue.core.data.source.local.entity.MovieEntity
-import com.example.moviecatalogue.core.data.source.local.entity.TvShowEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

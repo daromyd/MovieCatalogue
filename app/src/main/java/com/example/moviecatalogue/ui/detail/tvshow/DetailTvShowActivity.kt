@@ -2,6 +2,7 @@ package com.example.moviecatalogue.ui.detail.tvshow
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,8 +32,6 @@ class DetailTvShowActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-
-
         val detailTvShow = intent.getParcelableExtra<Movie>(EXTRA_DATA)
         showDetailTvShow(detailTvShow)
 
@@ -58,6 +57,12 @@ class DetailTvShowActivity : AppCompatActivity() {
                 favStatus = !favStatus
                 detailTvShowViewModel.setFavoriteTvShow(detailTvShow, favStatus)
                 setFavState(favStatus)
+
+                if (favStatus){
+                    Toast.makeText(this, getString(R.string.add_favorite), Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, getString(R.string.removed_favorite), Toast.LENGTH_SHORT).show()
+                }
             }
 
             lifecycleScope.launch {
@@ -91,5 +96,5 @@ class DetailTvShowActivity : AppCompatActivity() {
         val cutFormatter = SimpleDateFormat("yyyy-MM-dd")
         val dateObject = cutFormatter.parse(date)
         val postFormatter = SimpleDateFormat("dd MMMM yyyy")
-        return postFormatter.format(dateObject)
+        return postFormatter.format(dateObject!!)
     }}
