@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cv_item_episode"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -14,7 +13,6 @@
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cons_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="4dp">
@@ -40,7 +38,7 @@
             app:layout_constraintTop_toTopOf="@+id/img_movie">
 
             <TextView
-                android:id="@+id/tv_item_episode_title"
+                android:id="@+id/tv_episode_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -51,7 +49,7 @@
                 tools:text="@string/episodeTitle" />
 
             <TextView
-                android:id="@+id/tv_item_overview"
+                android:id="@+id/tv_episode_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"

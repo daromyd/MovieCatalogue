@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cv_item_movies"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -14,7 +13,6 @@
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
-        android:id="@+id/cons_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp">
@@ -51,31 +49,17 @@
             android:layout_below="@+id/tv_item_title"
             tools:text="@string/year" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_item_rate"
+            android:layout_width="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_stars_24"
+            android:drawablePadding="4dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="4dp"
-            android:layout_below="@+id/tv_release_date">
-
-            <ImageView
-                android:id="@+id/img_item_star"
-                android:layout_width="19sp"
-                android:layout_height="19sp"
-                android:src="@drawable/ic_baseline_stars_24"/>
-
-            <TextView
-                android:id="@+id/tv_item_rate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:gravity="start"
-                android:textColor="?attr/colorOnSecondary"
-                android:textSize="14sp"
-                tools:text="@string/rate" />
-        </LinearLayout>
-
-
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="16sp"
+            tools:text="@string/rate"
+            android:layout_below="@+id/tv_release_date"/>
 
     </RelativeLayout>
 

@@ -16,5 +16,5 @@ class MovieCatalogueInteractor(private val movieCatalogueRepository: IMovieCatal
 
     override fun setFavoriteTvShow(tvShow: Movie, state: Boolean) = movieCatalogueRepository.setFavoriteTvShow(tvShow, state)
 
-    override suspend fun getEpisode(id: Int) = movieCatalogueRepository.getEpisode(id)
+    override fun getEpisode(id: Int) = movieCatalogueRepository.getEpisode(id)
 }

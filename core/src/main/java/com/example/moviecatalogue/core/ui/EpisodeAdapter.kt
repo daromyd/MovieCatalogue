@@ -43,9 +43,8 @@ class EpisodeAdapter: RecyclerView.Adapter<EpisodeAdapter.ListViewHolder>() {
                 }else{
                     imgMovie.setImageDrawable(ContextCompat.getDrawable(itemView.context, R.drawable.ic_no_imge))
                 }
-
-                tvItemEpisodeTitle.text = itemView.context.getString(R.string.episodeTitle, data.episodeNumber.toString(), data.title)
-                tvItemOverview.text = data.overview
+                tvEpisodeTitle.text = itemView.context.getString(R.string.episodeTitle, data.episodeNumber.toString(), data.title)
+                tvEpisodeDetail.text = data.overview
             }
         }
 

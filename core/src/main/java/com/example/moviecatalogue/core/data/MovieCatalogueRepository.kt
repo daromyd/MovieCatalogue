@@ -10,7 +10,10 @@ import com.example.moviecatalogue.core.domain.model.Movie
 import com.example.moviecatalogue.core.domain.repository.IMovieCatalogueRepository
 import com.example.moviecatalogue.core.utils.AppExecutors
 import com.example.moviecatalogue.core.utils.DataMapper
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 
 class MovieCatalogueRepository(
@@ -74,8 +77,10 @@ class MovieCatalogueRepository(
                 appExecutors.diskIO().execute { localDataSource.setFavoriteTvShow(tvShowEntity, state) }
         }
 
-        override suspend fun getEpisode(id: Int): List<Episode> {
-                val remoteData = remoteDataSource.getEpisode(id)
-                return DataMapper.mapEpisodeResponseToDomain(remoteData)
+        override fun getEpisode(id: Int): Flow<List<Episode>> {
+                return flow {
+                        val remoteData = remoteDataSource.getEpisode(id)
+                        emit(DataMapper.mapEpisodeResponseToDomain(remoteData))
+                }.flowOn(Dispatchers.IO)
         }
 }

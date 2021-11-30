@@ -19,5 +19,5 @@ interface IMovieCatalogueRepository {
 
     fun setFavoriteTvShow(tvShow: Movie, state: Boolean)
 
-    suspend fun getEpisode(id: Int): List<Episode>
+    fun getEpisode(id: Int): Flow<List<Episode>>
 }

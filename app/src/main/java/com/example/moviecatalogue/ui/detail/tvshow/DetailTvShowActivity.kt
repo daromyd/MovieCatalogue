@@ -4,14 +4,12 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.core.domain.model.Movie
 import com.example.moviecatalogue.core.ui.EpisodeAdapter
 import com.example.moviecatalogue.databinding.ActivityDetailTvShowBinding
-import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.text.SimpleDateFormat
 
@@ -65,10 +63,9 @@ class DetailTvShowActivity : AppCompatActivity() {
                 }
             }
 
-            lifecycleScope.launch {
-                val listProduct = detailTvShowViewModel.getEpisode(detailTvShow.id)
-                episodeAdapter.setData(listProduct)
-            }
+            detailTvShowViewModel.getEpisode(detailTvShow.id).observe(this, { response ->
+                episodeAdapter.setData(response)
+            })
 
             with(binding.detailContent.rvEps){
                 layoutManager = LinearLayoutManager(this@DetailTvShowActivity)
